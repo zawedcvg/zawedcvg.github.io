@@ -22,6 +22,14 @@
     flex-wrap: inherit;
 }
 
+body.home .logo {
+    visibility: hidden;
+}
+
+body.home #menu {
+    margin-inline-start: auto;
+}
+
 .logo a {
     font-size: var(--headersize);
     font-weight: var(--semibold);

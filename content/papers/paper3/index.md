@@ -3,24 +3,22 @@ title: "Prompt2Box"
 date: 2026-02-06
 tags: ["embedding"]
 author: ["Neeladri Bhuiya", "Shib Sankar Dasgupta", "Haw-Shiuan Chang", "Andrew McCallum"]
-description: "This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021." 
+description: "This paper uses prompts to model prompts." 
 summary: "Model prompts as axis-aligned hyperrectangles in n-d space." 
 cover:
     image: "paper3.png"
     alt: "Vizualisation of an inner hedgehog"
     relative: true
-editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
-    Text: "Journal of Socio-Experimental Psychology"
 
 ---
 
 ---
 
-##### Download
+##### Resources
 
-+ [Paper](paper3.pdf)
-+ [Raw data](https://github.com/pmichaillat/michez-rule)
++ [Paper](https://arxiv.org/abs/2603.21438)
++ [Github](https://github.com/zawedcvg/Prompt2Box)
++ [Website](https://zawedcvg.github.io/P2B/)
 
 ---
 
@@ -33,17 +31,16 @@ To discover the weaknesses of LLMs, researchers often embed prompts into a vecto
 
 ##### Citation
 
-Schreiber-Ziegler, Hilda, and Moritz-Maria von Igelfeld. 2021. "Your Inner Hedgehog." *Journal of Socio-Experimental Psychology* 131 (2): 1299–1302.
-
 ```latex
-@article{SZI21,
-author = {Hilda Schreiber-Ziegler and Moritz-Maria von Igelfeld},
-year = {2021},
-title ={Your Inner Hedgehog},
-journal = {Journal of Socio-Experimental Psychology},
-volume = {131},
-number = {2},
-pages = {1299--1302}}
+@misc{bhuiya2026prompt2boxuncoveringentailmentstructure,
+      title={PROMPT2BOX: Uncovering Entailment Structure among LLM Prompts}, 
+      author={Neeladri Bhuiya and Shib Sankar Dasgupta and Andrew McCallum and Haw-Shiuan Chang},
+      year={2026},
+      eprint={2603.21438},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.21438}, 
+}
 ```
 
 ---

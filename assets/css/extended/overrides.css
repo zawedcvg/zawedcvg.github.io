@@ -1,0 +1,7 @@
+body {
+    background: var(--code-bg);
+}
+
+body.dark {
+    background: var(--theme);
+}
