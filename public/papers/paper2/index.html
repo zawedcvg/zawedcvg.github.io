@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/hugo-website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=hugo-website/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>PLAGUE: Plug-And-Play framework for life-long adaptive generation of multi-turn exploits | Neeladri Bhuiya</title>
+<meta name="keywords" content="AI safety, LLM, Lifelong Learning">
+<meta name="description" content="This paper studies the pulmonary efficiency of sausage dogs. Published in the ICLR 2026.">
+<meta name="author" content="Neeladri Bhuiya,&thinsp;Madhav Aggarwal,&thinsp;Diptanshu Purwar">
+<link rel="canonical" href="http://localhost:1313/hugo-website/papers/paper2/">
+<link crossorigin="anonymous" href="/hugo-website/assets/css/stylesheet.44e4a0a5cc0493ecb9afb1988f9f161b36e01ac46480fe2ddb50efe5fbcf98d9.css" integrity="sha256-ROSgpcwEk&#43;y5r7GYj58WGzbgGsRkgP4t21Dv5fvPmNk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/hugo-website/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/hugo-website/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/hugo-website/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/hugo-website/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/hugo-website/papers/paper2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/hugo-website/papers/paper2/">
+  <meta property="og:site_name" content="Neeladri Bhuiya">
+  <meta property="og:title" content="PLAGUE: Plug-And-Play framework for life-long adaptive generation of multi-turn exploits">
+  <meta property="og:description" content="This paper studies the pulmonary efficiency of sausage dogs. Published in the ICLR 2026.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="papers">
+    <meta property="article:published_time" content="2025-09-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-28T00:00:00+00:00">
+    <meta property="article:tag" content="AI Safety">
+    <meta property="article:tag" content="LLM">
+    <meta property="article:tag" content="Lifelong Learning">
+    <meta property="og:image" content="http://localhost:1313/hugo-website/papers/paper2/plague_overview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/hugo-website/papers/paper2/plague_overview.png">
+<meta name="twitter:title" content="PLAGUE: Plug-And-Play framework for life-long adaptive generation of multi-turn exploits">
+<meta name="twitter:description" content="This paper studies the pulmonary efficiency of sausage dogs. Published in the ICLR 2026.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "http://localhost:1313/hugo-website/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "PLAGUE: Plug-And-Play framework for life-long adaptive generation of multi-turn exploits",
+      "item": "http://localhost:1313/hugo-website/papers/paper2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "PLAGUE: Plug-And-Play framework for life-long adaptive generation of multi-turn exploits",
+  "name": "PLAGUE: Plug-And-Play framework for life-long adaptive generation of multi-turn exploits",
+  "description": "This paper studies the pulmonary efficiency of sausage dogs. Published in the ICLR 2026.",
+  "keywords": [
+    "AI safety", "LLM", "Lifelong Learning"
+  ],
+  "articleBody": " Download Paper Website Online appendix Code and data Abstract Large Language Models (LLMs) are improving at an exceptional rate. With the advent of agentic workflows, multi-turn dialogue has become the de facto mode of interaction with LLMs for completing long and complex tasks. While LLM capabilities continue to improve, they remain increasingly susceptible to jailbreaking, especially in multi-turn scenarios where harmful intent can be subtly injected across the conversation to produce nefarious outcomes. While single-turn attacks have been extensively explored, adaptability, efficiency and effectiveness continue to remain key challenges for their multi-turn counterparts. To address these gaps, we present PLAGUE, a novel plug-and-play framework for designing multi-turn attacks inspired by lifelong-learning agents. PLAGUE dissects the lifetime of a multi-turn attack into three carefully designed phases (Primer, Planner and Finisher) that enable a systematic and information-rich exploration of the multi-turn attack family. Evaluations show that red-teaming agents designed using PLAGUE achieve state-of-the-art jailbreaking results, improving attack success rates (ASR) by more than 30% across leading models in a lesser or comparable query budget. Particularly, PLAGUE enables an ASR (based on StrongReject (Souly et al., 2024)) of 81.4% on OpenAI’s o3 and 67.3% on Claude’s Opus 4.1, two models that are considered highly resistant to jailbreaks in safety literature. Our work offers tools and insights to understand the importance of plan initialization, context optimization and lifelong learning in crafting multi-turn attacks for a comprehensive model vulnerability evaluation.\nFigure 1: Overview of the attack Citation @misc{bhuiya2025plagueplugandplayframeworklifelong, title={PLAGUE: Plug-and-play framework for Lifelong Adaptive Generation of Multi-turn Exploits}, author={Neeladri Bhuiya and Madhav Aggarwal and Diptanshu Purwar}, year={2025}, eprint={2510.17947}, archivePrefix={arXiv}, primaryClass={cs.CR}, url={https://arxiv.org/abs/2510.17947}, } ",
+  "wordCount" : "267",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/hugo-website/papers/paper2/plague_overview.png","datePublished": "2025-09-28T00:00:00Z",
+  "dateModified": "2025-09-28T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Neeladri Bhuiya"
+  }, {
+    "@type": "Person",
+    "name": "Madhav Aggarwal"
+  }, {
+    "@type": "Person",
+    "name": "Diptanshu Purwar"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/hugo-website/papers/paper2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Neeladri Bhuiya",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/hugo-website/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/hugo-website/" accesskey="h" title="Neeladri Bhuiya">
+                <img src="http://localhost:1313/hugo-website/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Neeladri Bhuiya</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/hugo-website/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/hugo-website/courses/" title="Courses">
+                    <span>Courses</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/hugo-website/experience/" title="Experience">
+                    <span>Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/hugo-website/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      PLAGUE: Plug-And-Play framework for life-long adaptive generation of multi-turn exploits
+    </h1>
+    <div class="post-meta"><span title='2025-09-28 00:00:00 +0000 UTC'>September 2025</span>&nbsp;&middot;&nbsp;Neeladri Bhuiya,&thinsp;Madhav Aggarwal,&thinsp;Diptanshu Purwar&nbsp;&middot;&nbsp;<a href="https://github.com/pmichaillat/hugo-website" rel="noopener noreferrer" target="_blank">ICLR 2026</a>
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h5 id="download">Download</h5>
+<ul>
+<li><a href="paper2.pdf">Paper</a></li>
+<li><a href="https://zawedcvg.github.io/PLAGUE/" target="_blank">Website</a></li>
+<li><a href="appendix2.pdf">Online appendix</a></li>
+<li><a href="https://github.com/pmichaillat/wunk-model" target="_blank">Code and data</a></li>
+</ul>
+<hr>
+<h5 id="abstract">Abstract</h5>
+<p>Large Language Models (LLMs) are improving at an exceptional rate. With the advent of agentic workflows, multi-turn dialogue has become the de facto mode of interaction with LLMs for completing long and complex tasks. While LLM capabilities continue to improve, they remain increasingly susceptible to jailbreaking, especially in multi-turn scenarios where harmful intent can be subtly injected across the conversation to produce nefarious outcomes. While single-turn attacks have been extensively explored, adaptability, efficiency and effectiveness continue to remain key challenges for their multi-turn counterparts. To address these gaps, we present PLAGUE, a novel plug-and-play framework for designing multi-turn attacks inspired by lifelong-learning agents. PLAGUE dissects the lifetime of a multi-turn attack into three carefully designed phases (Primer, Planner and Finisher) that enable a systematic and information-rich exploration of the multi-turn attack family. Evaluations show that red-teaming agents designed using PLAGUE achieve state-of-the-art jailbreaking results, improving attack success rates (ASR) by more than 30% across leading models in a lesser or comparable query budget. Particularly, PLAGUE enables an ASR (based on StrongReject (Souly et al., 2024)) of 81.4% on OpenAI’s o3 and 67.3% on Claude’s Opus 4.1, two models that are considered highly resistant to jailbreaks in safety literature. Our work offers tools and insights to understand the importance of plan initialization, context optimization and lifelong learning in crafting multi-turn attacks for a comprehensive model vulnerability evaluation.</p>
+<h5 id="figure-1-overview-of-the-attack">Figure 1: Overview of the attack</h5>
+<p><img loading="lazy" src="/hugo-website/papers/paper2/plague_overview.png"></p>
+<hr>
+<h5 id="citation">Citation</h5>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span>@misc<span style="color:#0aa">{</span>bhuiya2025plagueplugandplayframeworklifelong,
+</span></span><span style="display:flex;"><span>      title=<span style="color:#0aa">{</span>PLAGUE: Plug-and-play framework for Lifelong Adaptive Generation of Multi-turn Exploits<span style="color:#0aa">}</span>, 
+</span></span><span style="display:flex;"><span>      author=<span style="color:#0aa">{</span>Neeladri Bhuiya and Madhav Aggarwal and Diptanshu Purwar<span style="color:#0aa">}</span>,
+</span></span><span style="display:flex;"><span>      year=<span style="color:#0aa">{</span>2025<span style="color:#0aa">}</span>,
+</span></span><span style="display:flex;"><span>      eprint=<span style="color:#0aa">{</span>2510.17947<span style="color:#0aa">}</span>,
+</span></span><span style="display:flex;"><span>      archivePrefix=<span style="color:#0aa">{</span>arXiv<span style="color:#0aa">}</span>,
+</span></span><span style="display:flex;"><span>      primaryClass=<span style="color:#0aa">{</span>cs.CR<span style="color:#0aa">}</span>,
+</span></span><span style="display:flex;"><span>      url=<span style="color:#0aa">{</span>https://arxiv.org/abs/2510.17947<span style="color:#0aa">}</span>, 
+</span></span><span style="display:flex;"><span><span style="color:#0aa">}</span>
+</span></span></code></pre></div><hr>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/hugo-website/tags/ai-safety/">AI Safety</a></li>
+      <li><a href="http://localhost:1313/hugo-website/tags/llm/">LLM</a></li>
+      <li><a href="http://localhost:1313/hugo-website/tags/lifelong-learning/">Lifelong Learning</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2026 Neeladri Bhuiya</span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">hugo</a>, <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">papermod</a>, &amp;
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">hugo-website</a>.
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Academic two-column homepage layout */
+.main .profile.academic-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 48px;
+    min-height: calc(100vh - var(--footer-height) - var(--header-height) - (var(--gap) * 4));
+    padding: var(--gap);
+    font-size: var(--homesize);
+    line-height: var(--lineheight);
+}
+
+/* Sidebar */
+.academic-sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    position: sticky;
+    top: calc(var(--header-height) + var(--gap));
+}
+
+.academic-sidebar img {
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    margin-bottom: 8px;
+}
+
+.academic-sidebar h1 {
+    font-size: 1.35rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.academic-position {
+    font-size: 0.875rem;
+    color: var(--secondary);
+    line-height: 1.4;
+}
+
+/* Social icons centered in sidebar */
+.academic-sidebar .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+/* Sidebar nav buttons */
+.academic-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    margin-top: 8px;
+}
+
+/* Main content area */
+.academic-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.academic-main h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.academic-main h2:first-child {
+    margin-top: 0;
+}
+
+.academic-main p {
+    margin-bottom: 14px;
+}
+
+.academic-main ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.academic-main ul li {
+    padding: 4px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+}
+
+.academic-main ul li:last-child {
+    border-bottom: none;
+}
+
+/* Buttons shared */
+.buttons {
+    flex-wrap: wrap;
+}
+
+.button {
+    background: none;
+    border-radius: 0;
+    margin: 0 8px;
+    padding: 0;
+    font-size: 16px;
+    line-height: var(--header-height);
+}
+
+.button-inner {
+    padding: 0;
+}
+
+.button:hover .button-inner {
+    border-bottom: 2px solid currentColor;
+}
+
+.button:hover {
+    background: none;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 640px) {
+    .main .profile.academic-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .academic-sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .academic-main {
+        width: 100%;
+    }
+}
