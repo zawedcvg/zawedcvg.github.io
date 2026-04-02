@@ -1,10 +1,10 @@
 ---
 title: "PLAGUE: Plug-And-Play framework for life-long adaptive generation of multi-turn exploits" 
 date: 2025-09-28
-tags: ["AI safety","LLM","Lifelong Learning"]
+tags: ["AI safety","LLM","Lifelong Learning", "Agent"]
 author: ["Neeladri Bhuiya", "Madhav Aggarwal", "Diptanshu Purwar"]
 description: "This paper studies the pulmonary efficiency of sausage dogs. Published in the ICLR 2026." 
-summary: "A new SOTA multi-turn attack" 
+summary: "Agentic framework for discovering novel potent multi-turn jailbreak attacks that achieve an attack success rate of 67.3% on Claude Opus 4.1"
 cover:
     image: "plague_overview.png"
     alt: "Overview of the PLAGUE attack"

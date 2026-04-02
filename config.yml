@@ -80,8 +80,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Neeladri Bhuiya"
-      icon: favicon.ico
+      text: "Home"
       iconHeight: 18
 
 markup:

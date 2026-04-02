@@ -4,7 +4,7 @@ date: 2024-11-12
 tags: ["adversarial attack","LLMs","Evaluation"]
 author: ["Neeladri Bhuiya", "Viktor Schlegel", "Stefan Winkler"]
 description: "This paper shows that LLMs struggle with challenging multi-hop reasoning, but in more subtle ways than fine-tuned models"
-summary: "Using a novel benchmark of carefully constructed trick questions, this paper exposes a troubling blind spot in large language models: when presented with false-but-plausible reasoning paths, they reliably follow the wrong trail. The condition appears widespread across both open and proprietary models, worsens as distractors grow more sophisticated."
+summary: "This paper shows that LLMs struggle with challenging multi-hop reasoning, but in more subtle ways than the older gen PLMs. It does so by creating adversarial attack on the HotpotQA using dependency parsing."
 cover:
     image: "cover_paper1.png"
     alt: "Seemingly Plausible Distactors"
