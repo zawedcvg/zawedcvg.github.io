@@ -10,6 +10,12 @@ pagination:
 taxonomies:
     tag: tags
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
 menu:
     main:
         - name: Papers
@@ -20,6 +26,9 @@ menu:
         #   weight: 3
         - name: Experience
           url: experience/
+          weight: 3
+        - name: Search
+          url: search/
           weight: 3
 
 
