@@ -1,0 +1,41 @@
+{{- $publications := where site.RegularPages "Section" "papers" -}}
+{{- $publications = where $publications "Params.selected" true -}}
+{{- with $publications.ByDate.Reverse }}
+<section class="selected-publications" aria-labelledby="selected-publications-title">
+    <div class="section-heading">
+        <h2 id="selected-publications-title">Selected Publications</h2>
+        <a href="{{ "papers/" | relURL }}">View all</a>
+    </div>
+    <div class="publication-list">
+        {{- range . }}
+        {{- $publication := . }}
+        <article class="publication-item">
+            <a class="publication-image" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+                {{- with .Resources.GetMatch .Params.cover.image }}
+                <img src="{{ .RelPermalink }}" alt="" loading="lazy">
+                {{- end }}
+            </a>
+            <div class="publication-details">
+                <span class="publication-venue">{{ .Params.venue }}</span>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p class="publication-authors">
+                    {{- range $index, $author := .Params.author -}}
+                        {{- if $index }}, {{ end -}}
+                        {{- if eq $author site.Params.author }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end -}}
+                        {{- if in $publication.Params.equalContribution $author }}<sup>*</sup>{{ end -}}
+                    {{- end -}}
+                </p>
+                {{- with .Params.equalContribution }}<p class="publication-note">* Equal contribution</p>{{ end }}
+                <p class="publication-summary">{{ .Params.selectedSummary }}</p>
+                <div class="publication-links">
+                    {{- with .Params.paperURL }}<a href="{{ . }}">Paper</a>{{ end -}}
+                    {{- with .Params.codeURL }}<a href="{{ . }}">Code</a>{{ end -}}
+                    {{- with .Params.projectURL }}<a href="{{ . }}">Project</a>{{ end -}}
+                    <a href="{{ .RelPermalink }}">Details</a>
+                </div>
+            </div>
+        </article>
+        {{- end }}
+    </div>
+</section>
+{{- end }}

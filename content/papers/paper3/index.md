@@ -5,6 +5,12 @@ tags: ["embedding"]
 author: ["Neeladri Bhuiya", "Shib Sankar Dasgupta", "Haw-Shiuan Chang", "Andrew McCallum"]
 description: "This paper uses prompts to model prompts." 
 summary: "Model prompts as axis-aligned hyperrectangles in n-d space." 
+selected: true
+venue: "EMNLP 2026 (Main)"
+selectedSummary: "Box embeddings capture both semantic relevance and specificity, exposing more fine-grained patterns in LLM behavior than vector embeddings."
+paperURL: "https://arxiv.org/pdf/2603.21438"
+codeURL: "https://github.com/zawedcvg/Prompt2Box"
+projectURL: "https://zawedcvg.github.io/P2B/"
 cover:
     image: "paper3.png"
     alt: "Vizualisation of an inner hedgehog"

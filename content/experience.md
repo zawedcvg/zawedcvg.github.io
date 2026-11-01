@@ -32,6 +32,14 @@ hideMeta: true
 - Results show improved retrieval performance and interesting scaling behaviors. See [Prompt2Box](https://arxiv.org/pdf/2603.21438).
 
 ### Researcher · National University of Singapore
+##### May 2024 - August 2024
+
+- Worked at NUS IDS on the topic of unlearnable data.
+- Worked extensively with Huggingface, specifically on different decoding styles like constrained beam decoding.
+- Fixed a bug with constrained beam decoding in the huggingface library.
+
+
+### Student Researcher · National University of Singapore
 ##### August 2023 – May 2024
 
 - Conducted a final year research project under the supervision of Dr. Stefan Winkler and Dr. Viktor Schlegel, leading to a deeper understanding of LLM's performance under strong adversarial attacks.

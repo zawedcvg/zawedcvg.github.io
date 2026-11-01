@@ -5,6 +5,11 @@ tags: ["adversarial attack","LLMs","Evaluation"]
 author: ["Neeladri Bhuiya", "Viktor Schlegel", "Stefan Winkler"]
 description: "This paper shows that LLMs struggle with challenging multi-hop reasoning, but in more subtle ways than fine-tuned models"
 summary: "This paper shows that LLMs struggle with challenging multi-hop reasoning, but in more subtle ways than the older gen PLMs. It does so by creating adversarial attack on the HotpotQA using dependency parsing."
+selected: true
+venue: "EMNLP 2024 (Main)"
+selectedSummary: "A dependency-parsing-based adversarial attack reveals how LLMs exploit subtle shortcuts in multi-hop reasoning."
+paperURL: "https://aclanthology.org/2024.emnlp-main.147.pdf"
+codeURL: "https://github.com/zawedcvg/Are-Large-Language-Models-Attentive-Readers.git"
 cover:
     image: "cover_paper1.png"
     alt: "Seemingly Plausible Distactors"

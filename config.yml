@@ -31,7 +31,6 @@ menu:
           url: search/
           weight: 3
 
-
 params:
     description: "This website hosts Neeladri Bhuiya's research papers, curriculum vitae, projects, and contact information."
     author: Neeladri Bhuiya
@@ -91,6 +90,17 @@ params:
     label:
       text: "Home"
       iconHeight: 18
+
+    fuseOpts:
+      isCaseSensitive: false
+      includeScore: true
+      shouldSort: true
+      location: 0
+      distance: 100
+      threshold: 0.8
+      minMatchCharLength: 1
+      # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+      keys: ["title", "permalink", "summary", "content"]
 
 markup:
     goldmark:

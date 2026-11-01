@@ -37,6 +37,10 @@
 {{- end }}
 
 {{- $term := .Data.Term }}
+{{- $isPapersList := and (eq .Section "papers") (not $term) }}
+{{- if $isPapersList }}
+<div class="papers-grid">
+{{- end }}
 {{- range $index, $page := $paginator.Pages }}
 
 {{- $class := "post-entry" }}
@@ -76,6 +80,9 @@
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
+{{- end }}
+{{- if $isPapersList }}
+</div>
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}

@@ -3,8 +3,15 @@ title: "PLAGUE: Plug-And-Play framework for life-long adaptive generation of mul
 date: 2025-09-28
 tags: ["AI safety","LLM","Lifelong Learning", "Agent"]
 author: ["Neeladri Bhuiya", "Madhav Aggarwal", "Diptanshu Purwar"]
+equalContribution: ["Neeladri Bhuiya", "Madhav Aggarwal"]
 description: "This paper studies the pulmonary efficiency of sausage dogs. Published in the ICLR 2026." 
 summary: "Agentic framework for discovering novel potent multi-turn jailbreak attacks that achieve an attack success rate of 67.3% on Claude Opus 4.1"
+selected: true
+venue: "ICLR 2026"
+selectedSummary: "A lifelong-learning red-teaming agent that discovers potent multi-turn jailbreaks while continuously improving its attack strategies."
+paperURL: "https://arxiv.org/pdf/2510.17947"
+codeURL: "https://github.com/madhavaggar/PLAGUE/"
+projectURL: "https://zawedcvg.github.io/PLAGUE/"
 cover:
     image: "plague_overview.png"
     alt: "Overview of the PLAGUE attack"
